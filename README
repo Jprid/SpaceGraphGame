@@ -1,0 +1,7 @@
+This is a Java program that finds the shortest path bewteen two user-indicated coordinates on an NxN graph.
+This program uses Dijkstra's Single-Source Shortest Path algorithm, and the space graph class which I designed.
+Run this program by running the Run.java file
+
+TODO:
+change graph printing from string to stringbuilder to decrease runtime
+
