@@ -2,6 +2,51 @@ This is a Java program that finds the shortest path bewteen two user-indicated c
 This program uses Dijkstra's Single-Source Shortest Path algorithm, and the space graph class which I designed.
 Run this program by running the Run.java file
 
+
+Description:
+Space Graph Game: (Solution to problem found here: https://www.reddit.com/r/dailyprogrammer/comments/2o5tb7/2014123_challenge_191_intermediate_space_probe/)
+Objective: 
+program the AI of a NASA space probe to travel from one point in space (NxN array representing the "map" of space. Probe must avoid all obstacles. 
+
+
+Requirements:
+Space map should be generated randomly at run-time.
+3Must show the final Map and shortest safe route on the map.
+. = empty space
+S = start location
+E = end location
+G = gravity well
+A = Asteroid
+O = Path.
+If you fail to get to the end because of no valid path you must travel as far as you can and show the path. Note that the probe path was terminated early due to "No Complete Path" error.
+Probe can move in 8 directions:
+	 Up, down, left, right or any of the 4 adjacent corners
+space map does not wrap around
+
+
+Output:
+"Must show the final Map and shortest safe route on the map.
+	. = empty space
+	S = start location
+	E = end location
+	G = gravity well
+	A = Asteroid
+	O = Path.
+If you fail to get to the end because of no valid path you must travel as far as you can and show the path. Note that the probe path was terminated early due to "No Complete Path" error."
+
+
+Solution:
+--Generates random 1D array to represent spacemap
+--Mathematical helper-functions implemented to maintain 2D representation of array.
+--Prints  final Map and shortest safe route on the map.
+	. = empty space
+	S = start location
+	E = end location
+	G = gravity well
+	A = Asteroid
+	O = Path.
+	If you fail to get to the end because of no valid path you must travel as far as you can and show the path. Note that the probe path was terminated early due to "No Complete Path" error.
+--uses Depth First Search and a Queue to find shortest path
 TODO:
 change graph printing from string to stringbuilder to decrease runtime
 
